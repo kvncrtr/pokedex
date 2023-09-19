@@ -1,0 +1,94 @@
+<div class="signup--container">
+   <div class="signup--case">
+      <p class="signup--title">Create account</p>
+
+      <h4 class="signup--nice">Nice to meet you!</h4>
+      <h2 class="signup--give">Give us the dets</h2>
+
+      <!-- [formGroup]="signupForm" -->
+      <div class="form--case">
+         <form >
+            <div class="signup--form-group">
+               <label for="signup--username">Username</label>
+               <input 
+                  type="text" 
+                  name="username" 
+                  id="signup--username" 
+                  placeholder="Username"
+                  ngModel
+                  required
+                  username
+               />
+               
+               <!-- #username="ngModel" -->
+            </div>
+
+            <div class="signup--form-group">
+               <label for="signup--email">E-mail</label>
+               <input 
+                  type="email" 
+                  name="email" 
+                  id="signup--email" 
+                  placeholder="E-mail"
+                  ngModel
+                  required
+                  email
+               />
+               
+               <!-- #email="ngModel" -->
+            </div>
+
+            <div class="signup--form-group">
+               <label for="signup--password">Password</label>
+               <input 
+                  type="password" 
+                  name="password" 
+                  id="signup--password" 
+                  placeholder="Password"
+                  ngModel
+                  required
+                  password
+               />
+               
+               <!-- #password="ngModel" -->
+            </div>
+
+            <div class="signup--form-group">
+               <label for="signup--gender">Gender</label>
+               <input 
+                  type="radio" 
+                  title="male"
+                  name="gender"
+                  formControlName="gender" 
+                  value="male"
+               />
+               <label for="signup--male">Male</label>
+               <input 
+                  type="radio" 
+                  title="female"
+                  name="gender"
+                  formControlName="gender" 
+                  value="female"
+               />
+               <label for="signup--female">Female</label>
+
+               <!-- #gender="ngModel" -->
+            </div>
+            
+            <div class="signup--button-container">
+               <button 
+                  class="signup--button" 
+                  type="submit" 
+                  title="button"
+               >
+                  Sign Up
+               </button>
+            </div>
+
+         </form>
+
+      </div>
+
+   </div>
+
+</div>

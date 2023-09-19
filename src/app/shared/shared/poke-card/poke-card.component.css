@@ -1,0 +1,103 @@
+@media screen and (min-width: 375px) {
+   .poke--container {
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      width: 20.5rem;
+      height: 8.25rem;
+      margin: 0 auto;
+      border-radius: 15px;
+      cursor: pointer;
+   }
+
+   .poke--container:hover {
+      transform: scale(1.01);
+   }
+
+   .poke--specs-case {
+      align-self: center;
+      padding: 0.5rem;
+   }
+
+   .poke--number {
+      font-weight: var(--fw-semi-light);
+   }
+
+   .poke--name {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+   }
+
+   .poke--type-case {
+      color: var(--clr-neutral-100);
+   }
+   
+   .type--container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: max-content;
+      border-radius: 5rem;
+      padding: 0.25rem;
+      gap: 0.4rem;
+   }
+
+   .type--container img {
+      width: 1.75rem;
+   }
+
+   .type--container p {
+      padding-right: 0.2rem;
+   }
+
+   .poke--art-case {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .poke--img-background {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      height: 100%;
+   }
+
+   .poke--add-to-team {
+      z-index: 2;
+      width: 81%;
+   }
+
+   .poke--button-case {
+      position: absolute;
+      top: 0.313rem;
+      right: 0.5rem;
+      width: max-content;
+   }
+
+   .poke--add {
+      border: none;
+      border-radius: 0.2rem;
+      padding: 0 0.313rem;
+      color: var(--clr-neutral-100);
+      background-color: var(--clr-primary-200);
+      cursor: pointer;
+   }
+
+   .poke--remove {
+      width: 1.18rem;
+      border: none;
+      border-radius: 0.2rem;
+      padding: 0 0.313rem;
+      color: var(--clr-neutral-100);
+      background-color: var(--clr-primary-400);
+      cursor: pointer;
+   }
+
+   .poke--avatar {
+      position: absolute;
+      top: 1.25rem;
+      left: 37%;
+   }
+}

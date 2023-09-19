@@ -1,0 +1,91 @@
+@media screen and (min-width: 375px) { 
+   .set--container {
+      position: relative;
+      height: 100vh;
+   }
+   
+   .set--title {
+      position: fixed;
+      width: 100vw;
+      z-index: 3;
+      padding-bottom: 0.313rem;
+      background-color: var(--clr-primary-500);
+   }
+   
+   .set--title h1 {
+      text-align: center;
+      font-size: var(--fs-600);
+      color: var(--clr-neutral-100);
+   }
+
+   .set--back-arrow {
+      position: absolute;
+      top: 0.05rem;
+      left: 0.05rem;
+      cursor: pointer;
+   }
+
+   .set--back-arrow:active {
+      opacity: 0;
+   }
+   
+   .set--all-settings {
+      height: 100vh;
+      padding: 3rem 1rem 5.5rem;
+      color: var(--clr-neutral-900);
+      background-color: var(--clr-primary-100);
+      font-size: var(--fs-600);
+   }
+
+   
+   .set--username-form-group {
+      margin-top: 1rem;
+   }
+   
+   #set--username {
+      margin: 0 auto;
+      width: 100%;
+      height: 3rem;
+      border: none;
+      padding-left: 0.35rem;
+      background-color: var(--clr-neutral-600);
+   }
+
+   .set--form-group {
+      margin-top: 1rem;
+   }
+
+   .set--gender-case label {
+      margin: 0 1rem 0 0.25rem ;
+   }
+
+   .set--submit-button {
+      position: absolute;
+      bottom: 10.125rem;
+      left: 50%;
+      width: 87.46vw;
+      height: 3.625rem;
+      border: none;
+      border-radius: 3.125rem;
+      font-size: var(--fs-600);
+      color: var(--clr-neutral-100);
+      background-color: var(--clr-primary-200);
+      transform: translateX(-50%);
+      cursor: pointer;
+   }
+   
+   .set--log-out-button {
+      position: absolute;
+      bottom: 5.5rem;
+      left: 50%;
+      width: 87.46vw;
+      height: 3.625rem;
+      border: none;
+      border-radius: 3.125rem;
+      font-size: var(--fs-600);
+      color: var(--clr-neutral-100);
+      background-color: var(--clr-primary-400);
+      transform: translateX(-50%);
+      cursor: pointer;
+   }
+}

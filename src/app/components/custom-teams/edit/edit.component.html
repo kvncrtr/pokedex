@@ -1,0 +1,64 @@
+<div class="edit--container">
+   <div class="edit--titel-bar">
+      <img 
+      class="edit--back-arrow"
+      src="../../../assets/back-arrow.png" 
+      alt="go back one page"
+      routerLink="/custom"
+      >
+      <h1>Custom</h1>
+   </div>
+   
+   <div class="edit--roster-changes">
+      <div class="edit--team-name-form">
+         <form>
+            <input 
+            id="edit--team-name"
+            type="text" 
+            name="edit" 
+            edit
+            ngModel
+            placeholder="Team name"
+            />
+            <!-- {{ #edit="ngModel" }} -->
+         </form>
+         
+         <p class="edit--remaining"><b>Left: </b>2</p>
+          <!-- {{ 6 - (user.team.length - 1) }} -->
+      </div>
+      
+      <div class="edit--choosen-pokemons">
+         <div *ngIf="!currentTeam" class="edit--empty-case">
+            <img src="../../../../assets/stunfish-header.png" alt="">
+            <h1>Empty Team...</h1>
+         </div>
+         
+         <div *ngIf="currentTeam" class="edit--current">
+            <app-poke-card></app-poke-card>
+         </div>
+      </div>
+      
+      <div class="edit--all-pokemons-case">
+         <h1 class="edit--all-pokemons-title">
+            Add/Remove Pokemon
+         </h1>
+         
+         <div class="edit--search">
+            <!-- <app-search-bar></app-search-bar> -->
+         </div>
+         
+         <div class="edit--all-pokemon">   
+            <app-poke-card *ngFor="let pokemon of pokemons" [cardData]="pokemon"></app-poke-card>
+            <mat-paginator
+               #paginator
+               [length]="1008"
+               [pageSize]="20"
+               [pageIndex]="currentPage"
+               (page)="pageEvents($event)"
+               aria="Select page"
+               role="doc-pagelist">
+            </mat-paginator>    
+         </div>
+      </div>
+   </div>
+</div>

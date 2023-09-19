@@ -1,0 +1,59 @@
+<div class="items--container">
+   <div class="home--title-bar">
+      <img
+         (click)="back()"
+         class="home--back-arrow" 
+         src="../../../assets/back-arrow.png" 
+         alt="visit previous page"
+      />
+      <h1>Home</h1>
+   </div>
+
+   <app-home-bar></app-home-bar>
+   <!-- <app-search-bar></app-search-bar> -->
+   
+   <div class="items--list-case">
+
+      <div 
+         class="items--list-item" 
+         routerLink="/home/item"
+         *ngFor="let item of itemData"
+      >
+
+         <div class="items--text-box">
+            <p class="items--number">nº{{ item.id }}</p>
+
+            <h4 class="items--name">{{ item.name }}</h4>
+
+            <p class="items--category">{{ item.category.name }}</p>
+
+            <p class="items--use-case">
+               <b>Use:</b> {{ item.flavor_text_entries[0].text }}
+            </p>
+         </div>
+         
+         <div class="items--img-case">
+            <img
+               class="items--img-backround" 
+               src="../../../../assets/type-charm-backgrounds/normal.png" 
+               alt="the actual picture of the item"
+            />
+            <img
+               class="items--img-sprite" 
+               src="{{ item.sprites.default }}" 
+               alt="pokemon sprites" 
+            />
+         </div>         
+      </div>
+
+      <mat-paginator
+         #paginator
+         [length]="2050"
+         [pageSize]="20"
+         [pageIndex]="currentPage"
+         (page)="pageEvents($event)"
+         aria="Select page"
+         role="doc-pagelist">
+      </mat-paginator>
+   </div>
+</div>

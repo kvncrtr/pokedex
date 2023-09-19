@@ -1,0 +1,143 @@
+<div class="view--container">
+   <div class="home--title-bar">
+      <img
+         (click)="back()"
+         class="home--back-arrow" 
+         src="../../../assets/back-arrow.png" 
+         alt="visit previous page"
+      />
+      <h1>Home</h1>
+   </div>
+
+   <div class="view--card-case">
+      <div class="view--background">
+         <div class="view--button-case">
+            <!-- <button class="view--remove">-</button>  -->
+            <button class="view--add">+</button> 
+         </div>
+         
+         <img 
+            class="view--background-image"
+            src="{{ headerBackground + pokemon.types[0].type['name'] + '-type-background.png'}}"
+            alt="background of"
+         />  
+         
+         <img 
+            class="view--sprite-header"
+            [src]="pokemon.sprites.front_default"
+            alt="ray dragon header"
+         /> 
+      </div>
+      
+      <div class="view--details">
+         <h2 class="view--details-name">{{ pokemon.name + ''}}</h2>
+         <p id="view--id">nº{{ pokemon.id }}</p>
+         
+         
+         <div class="view--type-case">
+            <div class="type--container {{'clr-poke-' + pokemon.types[0].type['name'] + '-o'}}">
+               <img src="{{ img + pokemon.types[0].type['name'] + '.png' }}" alt="type icon">
+               <p>{{pokemon.types[0].type['name']}}<p>
+            </div>         
+         </div>
+         
+         <p class="view--description">{{ species.flavor_text_entries[2].flavor_text }}</p>
+      </div>
+
+      <div class="view--build">
+         <div class="view--build-case">
+            
+            <div class="view--build-spec-case">
+               <div class="view--title-case">
+                  <img class="view--build-logo" src="../../../../assets/pokemon-preview/weight-hanging.png" alt="weight logo">
+                  <p class="view--build-text">Wieght</p>
+               </div>
+               
+               <div class="view--wieght-value-case">
+                  <b>{{ pokemon.weight }} kg</b>
+               </div>
+            </div>
+            
+            <div class="view--build-spec-case">
+               <div class="view--title-case">
+                  <img class="view--build-logo" src="../../../../assets/pokemon-preview/height-outlined.png" alt="height logo">
+                  <p class="view--build-text">Height</p>
+               </div>
+               
+               <div class="view--height-value-case">
+                  <b>{{ pokemon.height }} m</b>
+               </div>
+            </div>
+            
+            <div class="view--build-spec-case">
+               <div class="view--title-case">
+                  <img class="view--build-logo" src="../../../../assets/pokemon-preview/bx-category.png" alt="category logo">
+                  <p class="view--build-text">Category</p>
+               </div>
+               
+               <div class="view--category-value-case">
+                  <b>{{ species.egg_groups[0].name }}</b>
+               </div>
+            </div>
+            
+            <div class="view--build-spec-case">
+               <div class="view--title-case">
+                  <img class="view--build-logo" src="../../../../assets/pokemon-preview/iconoir-pokeball.png" alt="ability logo">
+                  <p class="view--build-text">Ability</p>
+               </div>
+               
+               <div class="view--ability-value-case">
+                  <b>{{ pokemon.abilities[0].ability.name }}</b>
+               </div>
+            </div>
+         </div>
+         <div class="view--weaknesses-case">
+            <h5 class="view--weakness-title">Weakness</h5>
+            <div class="view--weaknesses-tab-case {{'clr-poke-' + weakness + '-o'}}">
+               <img 
+               src="{{ img + weakness + '.png' }}" 
+               alt="weakness badge" 
+               />
+               <p>{{ weakness }}</p>
+            </div>
+         </div>
+         
+         <div class="view--game-case">
+            <h5 class="view--game-title">Game Visibility</h5>
+            
+            <div class="view--game-card-list" >
+               <div class="view--game-card" *ngFor="let game of pokemon.game_indices">
+                  <p>{{ game.version.name }}</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="view--evol-case">
+         <h5 class="view--evol-title">Evolution</h5>
+         
+         <div class="view--evol-flow-case" *ngFor="let stage of evol">
+            <div class="view--flow-card">
+               <div class="view--flow-image-case {{'clr-poke-' + pokemon.types[0].type['name'] + '-o'}}">
+                  <img
+                  [src]="stage.sprites"
+                  alt="pokemon picture"
+                  >
+               </div>
+               
+               <div class="view--flow-spec-case">
+                  <h4 class="view--flow-name">{{ stage.name }}</h4>
+                  <p class="view--flow-type-number">nº{{ stage.id }}</p>
+                  <div class="view--flow-type-case {{'clr-poke-' + pokemon.types[0].type['name'] + '-o'}}">
+                     <img 
+                     class="view--flow-type-img"
+                     src="{{ img + pokemon.types[0].type['name'] + '.png' }}"
+                     alt="type logo"
+                     >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

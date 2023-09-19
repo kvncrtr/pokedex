@@ -1,0 +1,82 @@
+<div class="all--pokemon-container">
+   <div class="home--title-bar">
+      <img
+         (click)="back()"
+         class="home--back-arrow" 
+         src="../../../assets/back-arrow.png" 
+         alt="visit previous page"
+      />
+      <h1>Home</h1>
+   </div>
+   <app-home-bar></app-home-bar>
+   <!-- <app-search-bar></app-search-bar> -->
+
+   <div class="pokemon--filter-case">
+      <!-- <form>
+         <div class="pokemon--filter-type">
+            <select 
+               id="type" 
+               title="type" 
+               name="type"
+            >
+               <option>Normal</option>
+               <option>Fire</option>
+               <option>Fighting</option>
+               <option>Flying</option>
+               <option>Grass</option>
+               <option>Ground</option>
+               <option>Electric</option>
+               <option>Bug</option>
+               <option>Water</option>
+               <option>Poison</option>
+               <option>Psychic</option>
+               <option>Rock</option>
+               <option>Ice</option>
+               <option>Dragon</option>
+               <option>Ghost</option>
+               <option>Dark</option>
+               <option>Steel</option>
+               <option>Fairy</option>
+            </select>
+         </div>
+
+         <div class="pokemon--filter-generation">
+            <select 
+               id="generation" 
+               title="generation" 
+               name="generation"
+            >
+               <option>Generation 1 &#45; Kanto &#45; 151 Pokémon</option>
+               <option>Generation 2 &#45; Johto &#45; 100 New Pokémon</option>
+               <option>Generation 3 &#45; Hoenn &#45; 135 New Pokémon</option>
+               <option>Generation 4 &#45; Sinnoh &#45; 107 New Pokémon</option>
+               <option>Generation 5 &#45; Unova &#45; 156 New Pokémon</option>
+               <option>Generation 6 &#45; Kalos &#45; 72 New Pokémon</option>
+               <option>Generation 7 &#45; Alola &#45; 88 New Pokémon</option>
+               <option>Generation 8 &#45; Galar &#45; 96 New Pokémon</option>
+               <option>Generation 9 &#45; Paldea &#45; 103 New Pokémon</option>
+            </select>
+         </div>
+      </form> -->
+
+      <div class="pokemon--total-count-case">
+         <p><b>Total:</b> {{ pokemons.length }}</p>
+      </div>
+   </div>
+
+   <div class="pokemon--case">
+      <div class="pokemon--list-box">
+         <app-poke-card *ngFor="let pokemon of pokemons" [cardData]="pokemon"></app-poke-card>
+         <mat-paginator
+            #paginator
+            [length]="1008"
+            [pageSize]="20"
+            [pageIndex]="currentPage"
+            (page)="pageEvents($event)"
+            aria="Select page"
+            role="doc-pagelist">
+         </mat-paginator>
+      </div>
+   </div>
+  
+</div>

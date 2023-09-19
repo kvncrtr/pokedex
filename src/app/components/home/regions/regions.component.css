@@ -1,0 +1,165 @@
+@media screen and (min-width: 375px) {
+   .regions--container {
+      z-index: 1;
+      min-height: 100vh;
+      padding: 7.1rem 1rem 5.6rem;
+      background-color: var(--clr-primary-100);
+   }
+
+   .home--title-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      min-height: 2.4rem;
+      display: flex;
+      align-items: center;
+      background-color: var(--clr-primary-500);
+   }
+
+   .home--back-arrow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2.5rem;
+      color: var(--clr-neutral-900);
+      cursor: pointer;
+   }
+
+   .home--title-bar h1 {
+      margin: 0 auto;
+      width: max-content;
+      text-align: center;
+      font-size: var(--fs-600);
+      color: var(--clr-neutral-100);
+   }
+
+   .regions--card-case {
+      width: max-content;
+      min-height: 75vh;
+      margin: 0 auto;
+   }
+
+   .regions--card {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 0.9375rem;
+      cursor: pointer;
+   }
+
+   .regions--info-case {
+      display: flex;
+   }
+
+   .regions--info-cities-case h4 {
+      margin-top: 1rem;
+   }
+
+   .regions--info-city-grid {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 80vw;
+      gap: 1rem;
+      margin-top: 0.313rem;
+   }
+
+   .regions--info-city-card {
+      width: 9.625rem;
+      padding: 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+      border-radius: 0.9375rem;
+      text-align: center;
+   }   
+
+   .regions--numbered {
+      font-weight: var(--fw-semi-light);
+      width: max-content;
+      background-color: var(--clr-neutral-500);
+   }
+   
+   #gen--img-background {
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      border-radius: 0.9375rem;
+   }
+   
+   .regions--text-box {
+      position: absolute;
+      left: 0;
+      top: 3vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      width: max-content;
+      color: var(--clr-neutral-100);
+      padding: 0.5rem 0.5rem 0.5rem 1.25rem ;
+      z-index: 2;
+   }
+
+   .regions--text-box h5 {
+      font-size: var(--fs-500);
+      font-weight: var(--fw-bold);
+   }
+   
+   .pokemon--preview {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      width: auto;
+      padding: 0.5rem;
+      z-index: 2;
+   }
+   
+   .pokemon--preview img {
+      width: 16.8vw;
+      height: auto;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .regions--card {
+      width: 45.25rem;
+   }
+
+   .home--title-bar h1 {
+      font-size: var(--fs-800);
+   }
+
+   #gen--img-background {
+      width: 45.25rem;
+      height: 14.063rem;
+   }
+   
+   .pokemon--preview {
+      width: 25.188rem;
+   }
+
+   .pokemon--preview img {
+      width: 8.063rem;
+      height: auto;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+   .regions--container {
+      padding: 12rem 1rem 10rem;
+      gap: 1rem;
+      justify-content: center;
+   }
+
+   .home--title-bar h1 {
+      font-size: var(--fs-1100);
+   }
+   
+   .home--back-arrow { 
+      top: 0.8rem;
+   }
+}

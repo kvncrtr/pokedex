@@ -1,0 +1,338 @@
+:root {
+   
+  /* Colors  */
+  --clr-primary-100: #fafaf5;
+  --clr-primary-101: #f0f0df;
+  --clr-primary-200: #c2cb82;
+  --clr-primary-300: #f5c849;
+  --clr-primary-400: #cc4a3d;
+  --clr-primary-500: #716569;                   
+  
+  /* Neutral Colors */
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #f2f3f5;
+  --clr-neutral-300: #f4f4f4;
+  --clr-neutral-400: #a4a4a4;
+  --clr-neutral-500: #cccccc;
+  --clr-neutral-600: #e6e6e6;
+  --clr-neutral-700: #666666;
+  --clr-neutral-800: #333333;
+  --clr-neutral-900: #000000;
+  
+  /* Poke Card Colors */
+  --clr-poke-fire-i: #fcf3eb;
+  --clr-poke-fire-o: #ff9d55;
+  --clr-poke-grass-i: #edf6ec;
+  --clr-poke-grass-o: #63bc5a;
+  --clr-poke-bug-i: #eff6e1;
+  --clr-poke-bug-o: #91c12f;
+  --clr-poke-electric-i: #fdf8e3;
+  --clr-poke-electric-o: #f4d23c;
+  --clr-poke-fairy-i: #fceffb;
+  --clr-poke-fairy-o: #ec8fe6;
+  --clr-poke-ground-i: #f9ebe4;
+  --clr-poke-ground-o: #d97845;
+  --clr-poke-steel-i: #f6f4ee;
+  --clr-poke-steel-o: #c5b78c;
+  --clr-poke-normal-i: var(--clr-neutral-200);
+  --clr-poke-normal-o: var(--clr-neutral-600);
+  --clr-poke-poison-i: #f4e9f8;
+  --clr-poke-poison-o: #b567ce;
+  --clr-poke-psychic-i: #feeaeb;
+  --clr-poke-psychic-o: #fa7179;
+  --clr-poke-water-i: #e5eff9;
+  --clr-poke-water-o: #5090d6;
+  --clr-poke-metal-i: #e7eef1;
+  --clr-poke-metal-o: #5a8ea2;
+  --clr-poke-dragon-i: #dceaf6;
+  --clr-poke-dragon-o: #0b6dc3;
+  --clr-poke-fighting-i: #f8e3e9;
+  --clr-poke-fighting-o: #ce416b;
+  --clr-poke-dark-i: #e7e6e9;
+  --clr-poke-dark-o: #5a5465;
+  --clr-poke-ghost-i: #e6e9f3;
+  --clr-poke-ghost-o: #5269ad;
+  --clr-poke-ice-i: #ebf8f6;
+  --clr-poke-ice-o: #73cec0;
+  --clr-poke-flying-i: #eef2fb;
+  --clr-poke-flying-o: #89aae3;
+
+  /* Font Family */
+  --ff-primary: 'Roboto', Geneva, Tahoma, Verdana, sans-serif;
+
+  /* Font Size */
+  --fs-400: 1rem;      /* 016px */
+  --fs-500: 1.125rem;  /* 018px */
+  --fs-600: 1.3rem;    /* 020px */
+  --fs-700: 1.5rem;    /* 024px */
+  --fs-800: 1.8rem;    /* 028px */
+  --fs-900: 2rem;      /* 032px */
+  --fs-1000: 2.5rem;   /* 040px */
+  --fs-1100: 3rem;     /* 048px */
+  --fs-1200: 3.5rem;   /* 056px */
+  --fs-1300: 4.5rem;   /* 072px */
+  --fs-1400: 7.75rem;  /* 124px */
+
+  /* Font Weights */
+  --fw-light: 100;
+  --fw-semi-light: 300;
+  --fw-regular: 400;
+  --fw-better-than-reg: 500;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
+}
+
+/* Utility classes */ 
+
+.clr-poke-fire-i {
+  background-color: #fcf3eb; 
+}
+
+.clr-poke-fire-o {
+  background-color: #ff9d55; 
+}
+
+.clr-poke-grass-i {
+  background-color: #edf6ec; 
+}
+
+.clr-poke-grass-o {
+  background-color: #63bc5a; 
+}
+
+.clr-poke-bug-i {
+  background-color: #eff6e1; 
+}
+
+.clr-poke-bug-o {
+  background-color: #91c12f; 
+}
+
+.clr-poke-electric-i {
+  background-color: #fdf8e3; 
+}
+
+.clr-poke-electric-o {
+  background-color: #f4d23c; 
+}
+
+.clr-poke-fairy-i {
+  background-color: #fceffb; 
+}
+
+.clr-poke-fairy-o {
+  background-color: #ec8fe6; 
+}
+
+.clr-poke-ground-i {
+  background-color: #f9ebe4; 
+}
+
+.clr-poke-ground-o {
+  background-color: #d97845; 
+}
+
+.clr-poke-steel-i {
+  background-color: #f6f4ee; 
+}
+
+.clr-poke-steel-o {
+  background-color: #c5b78c; 
+}
+
+.clr-poke-normal-i {
+  background-color: var(--clr-neutral-200);
+}
+
+.clr-poke-normal-o {
+  background-color: var(--clr-neutral-600);
+}
+
+.clr-poke-poison-i {
+  background-color: #f4e9f8; 
+}
+
+.clr-poke-poison-o {
+  background-color: #b567ce; 
+}
+
+.clr-poke-psychic-i {
+  background-color: #feeaeb; 
+}
+
+.clr-poke-psychic-o {
+  background-color: #fa7179; 
+}
+
+.clr-poke-water-i {
+  background-color: #e5eff9; 
+}
+
+.clr-poke-water-o {
+  background-color: #5090d6; 
+}
+
+.clr-poke-metal-i {
+  background-color: #e7eef1; 
+}
+
+.clr-poke-metal-o {
+  background-color: #5a8ea2; 
+}
+
+.clr-poke-dragon-i {
+  background-color: #dceaf6; 
+}
+
+.clr-poke-dragon-o {
+  background-color: #0b6dc3; 
+}
+
+.clr-poke-fighting-i {
+  background-color: #f8e3e9; 
+}
+
+.clr-poke-fighting-o {
+  background-color: #ce416b; 
+}
+
+.clr-poke-dark-i {
+  background-color: #e7e6e9; 
+}
+
+.clr-poke-dark-o {
+  background-color: #5a5465; 
+}
+
+.clr-poke-ghost-i {
+  background-color: #e6e9f3; 
+}
+
+.clr-poke-ghost-o {
+  background-color: #5269ad; 
+}
+
+.clr-poke-ice-i {
+  background-color: #ebf8f6; 
+}
+
+.clr-poke-ice-o {
+  background-color: #73cec0; 
+}
+
+.clr-poke-flying-i {
+  background-color: #eef2fb; 
+}
+
+.clr-poke-flying-o {
+  background-color: #89aae3; 
+}
+
+.clr-poke-rock-i {
+  background-color: #f6f4ee; 
+}
+
+.clr-poke-rock-o {
+  background-color: #c5b78c; 
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+   margin: 0rem;
+   padding: 0rem;
+   font-family: var(--ff-primary);
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-attachment: fixed;
+  color: var(--clr-neutral-100);
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--ff-body);
+  font-size: 16px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* mac os like scroll bar */
+/* total width */
+body::-webkit-scrollbar {
+  background-color: var(--clr-primary-500);
+  width: 0.8rem;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: var(--clr-primary-500);
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid var(--clr-primary-500);
+  cursor: pointer;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
+}
+
+/* global button click style */
+button:active {
+ opacity: 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,152 @@
+{
+   "Users": {
+      "N068596859XXHYWZW": {
+         "username": "admin",
+         "uuid": "N068596859XXHYWZW",
+         "password": "admin",
+         "email": "admin@admin.com",
+         "customTeams": {
+            "0": {
+               "teamName": "prime",
+               "team": {
+                  "0": "arceus",
+                  "1": "mewtwo",
+                  "2": "giratina",
+                  "3": "dialga",
+                  "4": "palkia",
+                  "5": "rayquaza"
+               }
+            },
+            "1": {
+               "teamName": "iron",
+               "team": {
+                  "0": "groudon",
+                  "1": "kyogre",
+                  "2": "ho-oh",
+                  "3": "celebi",
+                  "4": "arctibax",
+                  "5": "typhlosion"
+               }
+            },
+            "2": {
+               "teamName": "brick",
+               "team": {
+                  "0": "eternatus",
+                  "1": "greninja",
+                  "2": "dratini",
+                  "3": "crawdaunt",
+                  "4": "loudred",
+                  "5": "golduck"
+               }
+            }
+         },
+         "profile": {
+            "teamCount": 3,
+            "avi": "https://mediahistorymtl.files.wordpress.com/2013/01/portraitdetail2.jpg",
+            "followers": "5783213",
+            "following": [],
+            "gender": "male",
+            "isDark": "false"
+         }
+      },
+      "NFEWH4394FXYZ3435": {
+         "username": "truetrainer",
+         "uuid": "NFEWH4394FXYZ3435",
+         "password": "train2?",
+         "email": "train@poke.com",
+         "customTeams": {
+            "0": {
+               "teamName": "silver",
+               "team": {
+                  "0": "stonjourner",
+                  "1": "gilmmora",
+                  "2": "volcarona",
+                  "3": "victreebel",
+                  "4": "wormadam",
+                  "5": "iron jugulis"
+               }
+            },
+            "1": {
+               "teamName": "gold",
+               "team": {
+                  "0": "weezing",
+                  "1": "wyrdeer",
+                  "2": "dudunsparce",
+                  "3": "diggersby",
+                  "4": "chespin",
+                  "5": "weavile"
+               }
+            },
+            "2": {
+               "teamName": "swix",
+               "team": {
+                  "0": "grovyle",
+                  "1": "azurill",
+                  "2": "electrike",
+                  "3": "mienfoo",
+                  "4": "probopass",
+                  "5": "floragato"
+               }
+            }
+         },
+         "profile": {
+            "teamCount": 3,
+            "avi": "https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_400,h_400/https://useqwitter.com/wp-content/uploads/2022/08/blank-twitter-icon.jpg",
+            "followers": "64738",
+            "following": [],
+            "gender": "female",
+            "isDark": "false"
+         }
+      },
+      "N32439EUWIHRUEWIXZ": {
+         "username": "flowerchild",
+         "uuid": "N32439EUWIHRUEWIXZ",
+         "password": "rose",
+         "email": "rose@poke.com",
+         "customTeams": {
+            "0": {
+               "teamName": "diamond",
+               "team": {
+                  "0": "rayquaza",
+                  "1": "slowbro",
+                  "2": "toucannon",
+                  "3": "delphox",
+                  "4": "cutiefly",
+                  "5": "dusclops"
+               }
+            },
+            "1": {
+               "teamName": "flint",
+               "team": {
+                  "0": "aegislash",
+                  "1": "dottler",
+                  "2": "cinderace",
+                  "3": "rillaboom",
+                  "4": "nacli",
+                  "5": "meowth"
+               }
+            },
+            "2": {
+               "teamName": "emerald",
+               "team": {
+                  "0": "stantler",
+                  "1": "magcargo",
+                  "2": "mudbray",
+                  "3": "morpeko",
+                  "4": "guzzlord",
+                  "5": "mismagius"
+               }
+            }
+         },
+         "profile": {
+            "teamCount": 3,
+            "avi": "https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_400,h_400/https://useqwitter.com/wp-content/uploads/2022/08/blank-twitter-icon.jpg",
+            "followers": "64738",
+            "following": [],
+            "gender": "female",
+            "isDark": "false"
+         }
+      } 
+
+   }
+}

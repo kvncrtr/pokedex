@@ -1,0 +1,70 @@
+@media screen and (min-width: 375px) {
+   .other--container {
+      background-color: var(--clr-primary-100);
+      min-height: 100vh;
+   }
+
+   .other--titel-bar h1 {
+      background-color: var(--clr-primary-500);
+      text-align: center;
+      font-size: var(--fs-600);
+      color: var(--clr-neutral-100);
+   }
+
+   .other--list-case {
+      /* background-color: aqua; */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      min-height: 100vh;
+      padding: 1rem 1rem 5.8rem;
+   }
+
+   .other--username-case {
+      background-color: var(--clr-neutral-700);
+      padding: 1rem;
+   }
+
+   .other--users-team {
+      margin: 0 auto;
+      max-width: 43.75rem;
+      background-color: var(--clr-neutral-600); 
+      border: solid 0.313rem var(--clr-neutral-600); 
+      padding-bottom: 1rem;
+   }
+   .other--team-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.313rem;
+      padding: 0 1rem;
+      background-color: var(--clr-neutral-600);
+   }
+   
+   .other--card-team-imgs {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0.625rem;
+      /* background-color: palevioletred; */
+      border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+   }
+
+   .team--card-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .other--titel-bar h1 {
+      font-size: var(--fs-800);
+   }
+}
+
+@media screen and (min-width: 1440px) {
+   .other--titel-bar h1 {
+      font-size: var(--fs-1100);
+   }
+}

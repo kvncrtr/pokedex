@@ -1,0 +1,41 @@
+<div class="poke--container {{'clr-poke-' + cardData?.types[0].type['name'] + '-i'}}">
+   <div class="poke--specs-case" routerLink="/home/specs/{{ cardData.name + '/' + cardData.id }}">
+      <p class="poke--number">nº{{ cardData.id }}</p>
+      <h3 class="poke--name">{{ cardData.name }}</h3>
+
+      <div class="poke--type-case">
+         <div class="type--container {{'clr-poke-' + cardData.types[0].type['name'] + '-o'}}">
+            <img 
+               src="{{ img + cardData.types[0].type['name'] + '.png' }}" 
+               alt=" {{ cardData.types[0].type['name'] }} type icon"
+            >
+
+            <p>{{ cardData.types[0].type['name'] }}<p>
+         </div>         
+      </div>
+   </div>
+
+   <div class="poke--art-case">
+      <img 
+      routerLink="/home/specs/{{ cardData.name + '/' + cardData.id }}"
+         class="poke--img-background" 
+         src="{{ charm + cardData.types[0].type['name'] + '.png' }}" 
+         alt="img charm background"
+      />
+
+      <div class="poke--add-to-team">
+         <div class="poke--button-case">
+            <!-- 
+               <button class="poke--remove">-</button>
+            -->
+            <button class="poke--add">+</button> 
+         </div>
+         
+         <img
+            routerLink="/home/specs/{{ cardData.name + '/' + cardData.id }}"
+            class="poke--avatar"
+            [src]="cardData.sprites.front_default" alt="poke art"
+         />
+      </div>
+   </div>
+</div>

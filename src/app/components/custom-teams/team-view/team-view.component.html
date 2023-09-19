@@ -1,0 +1,38 @@
+<div class="team--view-container" *ngIf="(teams$ | async) as teams">
+   <div class="custom--title-bar">
+      <h1>Custom</h1>
+   </div>
+   
+   <div class="team--view-case">
+      <div class="team--create-card">
+         <button class="team--add" routerLink="/custom/edit">Create new team</button>
+      </div>
+      
+      <div class="team--list" > 
+         
+         <div 
+            *ngFor="let team of myTeamData; let index = index"
+            class="team--card" 
+            [routerLink]="['../custom', 'edit', index, team.name]" 
+            >
+            <!-- routerLink="../custom/edit"  -->
+            <div class="team--name-case">
+               <h4 class="team--name" >{{ team.name }}</h4>
+            </div>
+            
+            <div class="team--img-case">
+               <img
+                  *ngFor="let pokemon of team.data.slice(0, 3)"
+                  class="team--img"
+                  [src]="pokemon.sprites.front_default" 
+                  alt="pokemon avi"
+                  />
+            </div>
+            
+            <div class="team--status-case">
+               <p class="team--status">{{ team.data.length < 6 ? 6 + -team.data.length + ' left' : "full"}}</p> 
+            </div>
+         </div> 
+      </div>   
+   </div>
+</div>

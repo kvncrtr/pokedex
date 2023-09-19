@@ -1,0 +1,92 @@
+<div class="login--container">
+
+   <div class="login--case">
+      <div class="img--case">
+         <img
+            class="login--img-hilda"
+            src="../../../assets/characters/sprite-hilda-1.png" 
+            alt="login page logo">
+         <img
+            class="login--img-couple"
+            src="../../../assets/characters/couple-trainers.png" 
+            alt="login page logo">
+         <img
+            class="login--img-father-son"
+            src="../../../assets/characters/kid-and-fatguy-with-bag.png" 
+            alt="login page logo">
+         <img
+            class="login--img-teen"
+            src="../../../assets/characters/teen-trainer.png" 
+            alt="login page logo">
+      </div>
+      
+      <div class="form--group-case">
+         <!-- [formGroup]="signupForm" --> 
+         <div class="login--text-box">
+            <p class="login--pitch">Explore what's there for you.</p>
+            <h2 class="login--title">Catch Every Last Pokemon</h2>
+         </div>       
+         
+         <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+            <div class="form--group-username">
+               <label for="login--username">Username</label>
+
+               <input type="text"
+                  id="login--username"
+                  name="username"
+                  title="username"
+                  placeholder="megatrainer00"
+                  #username="ngModel"
+                  required
+                  ngModel
+                  minlength="4"
+               />
+
+               <p 
+                  #viewUsername
+                  class="form--error username-error" 
+                  *ngIf="!username.valid && username.touched"
+               >
+                  invaild username
+               </p>
+            </div>
+
+            <div class="form--group-password">
+               <label for="login--password">Password</label>
+
+               <input type="text"
+                  id="login--password"
+                  name="password"
+                  title="password"
+                  placeholder="password"
+                  #password="ngModel"
+                  required
+                  ngModel
+                  minlength="4"
+               />
+
+               <p 
+                  *ngIf="!password.valid && password.touched" 
+                  class="form--error password-error"
+               >
+                  invalid password
+               </p>
+            </div>
+
+            <div class="login--button-container">
+               <button 
+                  class="login--button" 
+                  type="submit" 
+                  title="log in"
+                  [disabled]="!loginForm.valid"
+               >
+                  Login
+               </button>
+            </div>
+         </form>
+
+      </div>
+
+   </div>
+
+</div>

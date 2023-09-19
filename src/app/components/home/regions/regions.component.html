@@ -1,0 +1,42 @@
+<div class="regions--container">
+   <div class="home--title-bar">
+      <img
+         (click)="back()"
+         class="home--back-arrow" 
+         src="../../../assets/back-arrow.png" 
+         alt="visit previous page"
+      />
+      <h1>Home</h1>
+   </div>
+   <app-home-bar></app-home-bar>
+
+   <div class="regions--card-case">
+   
+      <div class="regions--card" *ngFor="let region of regionsData">   
+         <div class="regions--text-box">
+            <h5 class="regions--name">{{  region?.name }}</h5>
+            <p>{{ 'º ' + region?.main_generation?.name }}</p>
+         </div>
+      
+         <img id="gen--img-background" src="{{ regionCoverImg + region.name + '.png' }}" alt="poke background" />
+         
+         <div class="regions--info-case">            
+            <div class="regions--info-cities-case">
+               <h4>Cities Inside this Generation: </h4>
+               
+               <div class="regions--info-city-grid">
+                  <div 
+                     class="regions--info-city-card" 
+                     *ngFor="let city of region?.locations"
+                  >
+                     <p class="regions--info-city-name">{{ city.name }}</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- <div class="regions--info-versions" *ngFor="let version of region.version_groups.name">{{ version }}</div> -->
+         </div>
+      </div>
+
+   </div>
+</div>

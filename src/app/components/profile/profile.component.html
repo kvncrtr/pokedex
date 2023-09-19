@@ -1,0 +1,75 @@
+<div class="set--container">
+   <div class="set--title">
+      <img
+         class="set--back-arrow" 
+         src="../../../assets/back-arrow.png" 
+         alt="visit previous page"
+         routerLink="../home"
+      />
+      <h1>Profile</h1>
+   </div>
+
+   <div class="set--all-settings"> 
+      
+      <form>
+         <!-- <div class="set--is-dark-case">
+            <mat-slide-toggle [(checked)]="switchState">
+               <mat-radio-button value="on">On</mat-radio-button>
+               <mat-radio-button value="off">Off</mat-radio-button>
+            </mat-slide-toggle>
+            Dark mode
+         </div>
+         
+         <div class="set--username-form-group">
+            <label for="set--username">Change username </label>
+            <input
+               id="set--username"
+               name="username"
+               type="text"
+               placeholder="username"
+            />
+         </div>
+      
+         <div class="set--form-group">
+            <label for="set--gender">Gender</label>
+
+            <div class="set--gender-case">
+               <input 
+                  type="radio" 
+                  title="male"
+                  name="gender"
+                  formControlName="gender" 
+                  value="male"
+               />
+               <label for="set--male">Male</label>
+               <input 
+                  type="radio" 
+                  title="female"
+                  name="gender"
+                  formControlName="gender" 
+                  value="female"
+               />
+               <label for="set--female">Female</label>
+            </div>
+         </div> -->
+
+         <button 
+            class="set--submit-button" 
+            type="button" 
+            title="log out"
+         >
+            Done
+         </button>
+      </form>
+
+      <button 
+         (click)="logOut()"
+         class="set--log-out-button" 
+         type="button" 
+         title="log out"
+         routerLink="/login"
+      >
+         Log out
+      </button>
+   </div>
+</div>

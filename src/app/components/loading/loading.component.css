@@ -1,0 +1,20 @@
+@media screen and (min-width: 375px){
+   .load--container {
+      position: relative;
+      height: 100vh;
+      background-color: var(--clr-primary-500);
+   }
+
+   .load--child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .load--img {
+      width: 15rem;
+   }
+}

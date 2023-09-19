@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+$light-primary-palette: (
+   50: #fafaf5, 
+   200: #716569,
+ // ... continues to 900
+   contrast: (
+      50: #ffffff,
+      100: #f4f4f4,
+      200: #a4a4a4,
+      300: #cccccc,
+      400: #000000,
+   )
+);
+
+$light-accent-palette: (
+   50: #f0f0df,
+   100: #c2cb82,
+   200: #f5c849,
+   300: #cc4a3d,
+
+   contrast: (
+      50: #f2f3f5,
+      100: #666666,
+      200: #e6e6e6,
+      800: #333333,
+   )
+);
