@@ -61,7 +61,6 @@
    .items--text-box {
       align-self: center;
       padding: 0.5rem;
-      /* background-color: aqua; */
    }
    
    .items--number {
@@ -108,7 +107,6 @@
    mat-paginator {
       width: 85vw;
       margin: 0 auto;
-      background-color: aqua;
    }
 }
 

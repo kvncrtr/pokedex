@@ -9,7 +9,7 @@ import { fetchUser, fetchUserSuccess } from "../actions/user.actions";
 
 @Injectable({ providedIn: 'root' })
 export class userEffect {
-   firebaseUrl = 'https://pokedex-2023-default-rtdb.firebaseio.com/Users/';
+   firebaseUrl = 'https://pokedex-9-18-2023-default-rtdb.firebaseio.com/Users/';
    json = '.json';
    user: any;
    uuid = this.storage.getData('uuid');

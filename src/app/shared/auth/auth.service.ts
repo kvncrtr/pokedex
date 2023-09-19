@@ -8,7 +8,7 @@ import { StorageService } from '../services/storage.service';
     providedIn: 'root'
 })
 export class AuthService {
-    userUrl = 'https://pokedex-2023-default-rtdb.firebaseio.com/Users'
+    userUrl = 'https://pokedex-9-18-2023-default-rtdb.firebaseio.com/Users'
     jsonExt = '.json'
     userData: any;
     currentUser = {};

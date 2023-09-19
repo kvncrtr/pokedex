@@ -10,7 +10,7 @@ import { fetchUser } from '../store/actions/user.actions';
    providedIn: 'root'
 })
 export class UserService {
-   firebaseUrl = 'https://pokedex-2023-default-rtdb.firebaseio.com/Users/';
+   firebaseUrl = 'https://pokedex-9-18-2023-default-rtdb.firebaseio.com/Users/';
    json = '.json';
    uuid = this.storage.getData('uuid');
 
