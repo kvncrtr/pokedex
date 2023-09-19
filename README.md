@@ -1,5 +1,5 @@
 # Pokedex
-[View Live Project]( )
+[View Live Project](https://pokedex-9-19-2023.netlify.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
