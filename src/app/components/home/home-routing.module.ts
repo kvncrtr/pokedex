@@ -63,36 +63,3 @@ const routes: Routes = [
    exports: [RouterModule]
 })
 export class HomeRoutingModule {}
-
-/*
-
-how to navigate to the specs route with a router link
-
-const routes: Routes = [
-   {
-    path: 'home',
-    component: HomeComponent,
-    children: [
-      {
-        path: '',
-        component:PokemonComponent,
-        children: [
-          {
-            path: 'specs',
-            component: PokeSpecsComponent
-          }
-        ]
-      },
-      {
-        path: 'regions',
-        component: RegionsComponent
-      },
-      {
-        path: 'items',
-        component: ItemsComponent
-      }
-    ]
-  }
-];
-
-*/ 
