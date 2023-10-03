@@ -1,0 +1,64 @@
+@media screen and (min-width: 375px) {
+   .signup--container {
+      padding: 1rem;
+      min-height: 100vh;
+      position: relative;
+   }
+
+   .img--case { }
+
+   .signup--img-hilda {
+      margin: 0 auto;
+      display: block;
+      height: 23rem;
+   }
+
+   .signup--img-couple,
+   .signup--img-father-son,
+   .signup--img-teen {
+      display: none;
+   }
+
+   .signup--case {
+      position: absolute;
+      bottom: 0;
+      left: -.05rem;
+      width: 100%;
+      height: 57vh;
+      padding: 1rem;
+      text-align: center;
+      background-color: var(--clr-primary-500);
+   }
+   
+   .signup--title {
+      margin-top: 1rem;
+      font-weight: var(--fw-light);
+      font-size: var(--fs-400);
+   }
+   
+   .signup--nice {
+      font-size: var(--fs-500);
+   }
+
+   .signup--give {
+      margin-top: 1rem;
+      font-size: var(--fs-700);
+   }
+
+   .signup--form-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+   }
+
+   #signup--username,
+   #signup--email,
+   #signup--password {
+      height: 3.25rem;
+      margin-top: 0.5rem;
+   }
+   
+   label {
+      text-align: left;
+   }
+}
