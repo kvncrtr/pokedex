@@ -25,7 +25,7 @@
       height: 57vh;
       padding: 1rem;
       text-align: center;
-      background-color: var(--clr-primary-500);
+      color: var(--clr-neutral-900);
    }
    
    .signup--title {
@@ -36,8 +36,9 @@
    }
 
    .signup--give {
-      margin-top: 0.5rem;
-      font-size: var(--fs-700);
+      margin-top: 0.625rem;
+      font-size: var(--fs-500);
+      font-weight: var(--fw-semi-bold);
    }
 
    .signup--form-group {
@@ -63,10 +64,19 @@
       text-align: left;
    }
 
+   .signup--button-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 15vh;
+      background-color: var(--clr-neutral-800);
+   }
+
    .signup--button {
       width: 87.46vw;
       height: 3.625rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       border: none;
       border-radius: 3.125rem;
       font-size: var(--fs-600);
@@ -78,6 +88,22 @@
    .signup--button:disabled {
       opacity: 0.5;
       cursor: not-allowed;
+   }
+
+   .signup--switch-link {
+      font-weight: var(--fw-light);
+      margin-top: 0.6rem;
+      color: var(--clr-neutral-100);
+   }
+
+   .signup--login {
+      font-weight: 400;
+      color: var(--clr-primary-600);
+   }
+
+   .signup--login:hover {
+      cursor: pointer;
+      text-decoration: underline;
    }
 }
 
@@ -174,18 +200,54 @@
       background-color: var(--clr-neutral-600);
    }
 
-   .login--switch-link {
+   .signup--switch-link {
       font-weight: var(--fw-light);
       margin-top: 0.8rem;
    }
+}
 
-   .login--signup {
-      font-weight: 400;
-      color: var(--clr-primary-600);
+@media screen and (min-width: 1440px) {
+   .signup--container {
+      padding: 4rem;
    }
 
-   .login--signup:hover {
-      cursor: pointer;
-      text-decoration: underline;
+   .img--case {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+      gap: 1rem;
+   }
+
+   .signup--img-hilda,
+   .signup--img-couple,
+   .signup--img-father-son,
+   .signup--img-teen {
+      display: block;
+   }
+
+   .signup--textbox {
+      margin-top: 6vh;
+   }
+
+   .signup--form-case {
+      width: 35vw;
+   }
+
+   .signup--form-group {
+      margin-top: 3rem;
+   }
+
+   .signup--title {
+      font-size: var(--fs-600);
+   }
+
+   .signup--give {
+      font-size: var(--fs-700);
+   }
+
+   .signup--button {
+      width: 33vw;
    }
 }

@@ -108,6 +108,7 @@
       justify-content: center;
       align-items: center;
       height: 15vh;
+      color: var(--clr-neutral-100);
       background-color: var(--clr-neutral-800);
    }
 
@@ -125,6 +126,21 @@
    .login--button:disabled {
       opacity: 0.5;
       cursor: not-allowed;
+   }
+
+   .login--switch-link {
+      font-weight: var(--fw-light);
+      margin-top: 0.6rem;
+   }
+   
+   .login--signup {
+      font-weight: 400;
+      color: var(--clr-primary-600);
+   }
+
+   .login--signup:hover {
+      cursor: pointer;
+      text-decoration: underline;
    }
 
    .form--error {
@@ -208,6 +224,7 @@
       width: 40vw;
       height: min-content;
       position: unset;
+      color: var(--clr-neutral-900);
       background-color: transparent;
    }
 
@@ -237,7 +254,7 @@
    .login--container {
       padding: 4rem;
    }
-
+   
    .img--case {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -246,47 +263,42 @@
       width: 50vw;
       gap: 1rem;
    }
-
-   .login--img-hilda {
-      display: block;
-   }
-
-   .login--img-couple {
-      display: block;
-   }
-
-   .login--img-father-son {
-      display: block;
-   }
-
+   
+   .login--img-hilda,
+   .login--img-couple,
+   .login--img-father-son ,
    .login--img-teen {
       display: block;
+   }
+   
+   form {
+      height: 60vh;
    }
 
    .form--group-case {
       width: 35vw;
    }
-
+   
    .form--group-username {
       margin-top: 4rem;
    }
-
+   
    .form--group-password {
       margin-top: 3rem;
    }
-
+   
    .login--pitch {
       font-size: var(--fs-600);
    }
-
+   
    .login--title {
       font-size: var(--fs-700);
    }
-
+   
    .login--button-container {
       margin-top: 9rem;
    }
-
+   
    .login--button {
       width: 33vw;
    }
