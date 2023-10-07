@@ -21,7 +21,7 @@
       display: none;
    }
 
-   .form--group-case {
+   .login--form-case {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -198,13 +198,9 @@
       letter-spacing: 0.125rem;
    }
 
-   .form--group-case {
+   .login--form-case {
       width: 100%;
       height: 100%;
-   }
-
-   form {
-      min-width: none;
    }
 
    .form--group-username {
@@ -220,7 +216,7 @@
    }
 
    .login--button-container {
-      margin: 10rem auto;
+      margin: 17.5vh auto 0;
       width: 40vw;
       height: min-content;
       position: unset;
@@ -275,7 +271,7 @@
       height: 60vh;
    }
 
-   .form--group-case {
+   .login--form-case {
       width: 35vw;
    }
    
