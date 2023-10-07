@@ -24,79 +24,71 @@
       <div class="signup--form-case">
 
          <div class="signup--textbox">
-            <p class="signup--title">create an account</p>
+            <p class="signup--title">create an account.</p>
             
             <h2 class="signup--give">Fill out your details</h2>
          </div>
          
-         <div class="form--case">
-            <form>
-               <div class="signup--form-group">
-                  <label for="signup--username">Username</label>
-                  <input 
-                     type="text" 
-                     name="username" 
-                     id="signup--username" 
-                     placeholder="Username"
-                     ngModel
-                     required
-                     username
-                  />
-                  
-               </div>
-
-               <div class="signup--form-group">
-                  <label for="signup--email">Password</label>
-                  <input 
-                     type="email" 
-                     name="email" 
-                     id="signup--email" 
-                     placeholder="password"
-                     ngModel
-                     required
-                     email
-                  />
-                  
-               </div>
-
-               <div class="signup--form-group">
-                  <label for="signup--password">Confirm Password</label>
-                  <input 
-                     type="password" 
-                     name="password" 
-                     id="signup--password" 
-                     placeholder="confirm password"
-                     ngModel
-                     required
-                     password
-                  />
-               </div>
+         <form>
+            <div class="signup--form-group-username">
+               <label for="signup--username">Username</label>
+               <input 
+                  type="text" 
+                  name="username" 
+                  id="signup--username" 
+                  placeholder="Username"
+                  ngModel
+                  required
+                  username
+               />
                
-               <div class="signup--button-container">
-                  <button 
-                  
-                     class="signup--button" 
-                     type="submit" 
-                     title="button"
-                  >
-                     Sign Up
-                  </button>
-                  <p class="signup--switch-link">have an account? 
-                     <span
-                        routerLink="/login"
-                        class="signup--login">
-                        click here
-                     </span>
-                  </p>
-               </div>
+            </div>
 
-            </form>
+            <div class="signup--form-group-password">
+               <label for="signup--email">Password</label>
+               <input 
+                  type="email" 
+                  name="email" 
+                  id="signup--email" 
+                  placeholder="password"
+                  ngModel
+                  required
+                  email
+               />
+               
+            </div>
 
-         </div>
-
-      </div>
+            <div class="signup--form-group-confrim">
+               <label for="signup--password">Confirm Password</label>
+               <input 
+                  type="password" 
+                  name="password" 
+                  id="signup--password" 
+                  placeholder="confirm password"
+                  ngModel
+                  required
+                  password
+               />
+            </div>
             
-         
+            <div class="signup--button-container">
+               <button 
+               
+                  class="signup--button" 
+                  type="submit" 
+                  title="button"
+               >
+                  Sign Up
+               </button>
+               <p class="signup--switch-link">have an account? 
+                  <span
+                     routerLink="/login"
+                     class="signup--login">
+                     click here
+                  </span>
+               </p>
+            </div>
+         </form>
+      </div>         
    </div>
-
 </div>
