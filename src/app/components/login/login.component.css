@@ -266,21 +266,9 @@
    .login--img-teen {
       display: block;
    }
-   
-   form {
-      height: 60vh;
-   }
 
    .login--form-case {
       width: 35vw;
-   }
-   
-   .form--group-username {
-      margin-top: 4rem;
-   }
-   
-   .form--group-password {
-      margin-top: 3rem;
    }
    
    .login--pitch {
@@ -291,8 +279,16 @@
       font-size: var(--fs-700);
    }
    
+   .form--group-username {
+      margin-top: 4rem;
+   }
+   
+   .form--group-password {
+      margin-top: 3rem;
+   }
+   
    .login--button-container {
-      margin-top: 9rem;
+      margin-top: 15.64vh;
    }
    
    .login--button {

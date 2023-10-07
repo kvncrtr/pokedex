@@ -51,7 +51,7 @@
 
    .signup--form-group-username,
    .signup--form-group-password,
-   .signup--form-group-confrim {
+   .signup--form-group-confirm {
       display: flex;
       flex-direction: column;
       width: 85%;
@@ -60,13 +60,13 @@
 
    .signup--form-group-username label,
    .signup--form-group-password label,
-   .signup--form-group-confrim label {
+   .signup--form-group-confirm label {
       margin-left: 0.5rem;
    } 
 
    #signup--username,
-   #signup--email,
-   #signup--password {
+   #signup--password,
+   #signup--confirm {
       height: 3.25rem;
       margin-top: 0.5rem;
       border: none;
@@ -88,7 +88,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
+      width: 100.1vw;
       height: 15vh;
       background-color: var(--clr-neutral-800);
    }
@@ -187,6 +187,16 @@
       font-size: var(--fs-600);
       letter-spacing: 0.125rem;
    }
+
+   .signup--form-group-username {
+      margin-top: 2.5rem;
+   }
+   
+   .signup--form-group-password,
+   .signup--form-group-confirm {
+      margin-top: 2rem;
+   }
+   
    
    .signup--button-container {
       margin: 11vh auto 0;
@@ -238,26 +248,35 @@
       display: block;
    }
 
-   .signup--textbox {
-      margin-top: 6vh;
-   }
-
    .signup--form-case {
       width: 35vw;
    }
 
-   .signup--form-group {
-      margin-top: 3rem;
+   .signup--textbox {
+      margin-top: 14vh;
    }
 
    .signup--title {
       font-size: var(--fs-600);
    }
-
+   
    .signup--give {
       font-size: var(--fs-700);
    }
 
+   .signup--form-group-username {
+      margin-top: 2rem;
+   }
+   
+   .signup--form-group-password,
+   .signup--form-group-confirm {
+      margin-top: 3rem;
+   }
+
+   .signup--button-container {
+      margin-top: 2vh;
+   }
+   
    .signup--button {
       width: 33vw;
    }
