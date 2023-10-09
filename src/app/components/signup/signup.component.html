@@ -27,7 +27,7 @@
             <h2 class="signup--give">Fill out your details</h2>
          </div>
          
-         <form>
+         <form (ngSubmit)="onSubmit(signupForm)" #signupForm="ngForm">
             <div class="signup--form-group-username">
                <label for="signup--username">Username</label>
                <input 
@@ -51,7 +51,7 @@
                   placeholder="password"
                   ngModel
                   required
-                  email
+                  password
                />
                
             </div>
