@@ -125,6 +125,14 @@
       cursor: pointer;
       text-decoration: underline;
    }
+
+   .signup--error {
+      margin-top: 0.313rem;
+      padding-left: 0.313rem;
+      text-align: left;
+      color: var(--clr-neutral-100);
+      background-color: var(--clr-primary-400);
+   }
 }
 
 @media screen and (min-width: 768px) {
