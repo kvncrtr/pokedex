@@ -40,22 +40,24 @@
                   required
                   username
                   #username="ngModel"
-               />
-               <span class="signup--error" *ngIf="!username.valid && username.touched">your username must be 4 characters long</span>
-            </div>
-
-            <div class="signup--form-group-password">
-               <label for="signup--password">Password</label>
-               <input 
+                  />
+                  <span class="signup--error" *ngIf="!username.valid && username.touched">your username must be 4 characters long</span>
+               </div>
+               
+               <div class="signup--form-group-password">
+                  <label for="signup--password">Password</label>
+                  <input 
                   type="password" 
                   name="password" 
                   id="signup--password" 
                   placeholder="password"
+                  minlength="7"
                   ngModel
                   required
                   password
+                  #password="ngModel"
                />
-               
+               <span class="signup--error" *ngIf="!password.valid && password.touched">your password length has to be greater than 6</span>
             </div>
 
             <div class="signup--form-group-confirm">
@@ -67,7 +69,7 @@
                   placeholder="confirm password"
                   ngModel
                   required
-                  password
+                  confirm
                />
             </div>
             
