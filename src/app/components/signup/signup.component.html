@@ -39,7 +39,9 @@
                   ngModel
                   required
                   username
+                  #username="ngModel"
                />
+               <span class="signup--error" *ngIf="!username.valid && username.touched">must be 4 characters long</span>
             </div>
 
             <div class="signup--form-group-password">
@@ -71,7 +73,7 @@
             
             <div class="signup--button-container">
                <button 
-               
+                  [disabled]="!signupForm.valid"
                   class="signup--button" 
                   type="submit" 
                   title="button"
