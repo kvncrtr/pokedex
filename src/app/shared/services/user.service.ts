@@ -18,15 +18,15 @@ export class UserService {
       private storage: StorageService,
       private store: Store<UserState>,
       private http: HttpClient   
-   ) {}
+   ) {};
 
    getUsers(): Observable<any> {
       return this.http.get<any>(`${this.firebaseUrl}${this.json}`)
-   }
+   };
 
    getUser(): Observable<any> {
       return this.http.get<any>(`${this.firebaseUrl}${this.uuid}${this.json}`)
-   }
+   };
 
    fetchTeam(id: number) {
       return this.http.get(`${this.firebaseUrl}${this.uuid}${this.json}`).pipe(
@@ -39,5 +39,20 @@ export class UserService {
             })
          })
       )
+   };
+
+   getAllUsers(): Observable<any> {
+      return this.http.get(`${this.firebaseUrl}${this.json}`).pipe(
+         map((data) => {
+            // const cloneData = 
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+            // use an object methods to take all the usernames.
+            // reduce the usernames to just an array with the usernames
+            // loop over the array to see if the username submited is present
+            // if present then make tha form invalid 
+            // if not present then push the username to another function that post the submitted information
+            
+         })
+      );
    }
 }
