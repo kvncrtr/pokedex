@@ -40,9 +40,9 @@
                   required
                   username
                   #username="ngModel"
-                  />
-                  <span class="signup--error" *ngIf="!username.valid && username.touched">your username must be 4 characters long</span>
-               </div>
+               />
+               <span id="usernameError" class="signup--error" *ngIf="!username.valid && username.touched">{{ usernameErrorMessage }}</span>
+            </div>
                
                <div class="signup--form-group-password">
                   <label for="signup--password">Password</label>
