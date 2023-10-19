@@ -51,30 +51,4 @@ export class SignupComponent implements OnInit {
 }
 /*
 
-how to change the span inner text to say "username is not avaliable" programatically 
-
-<div class="signup--form-case">
-
-         <div class="signup--textbox">
-            <p class="signup--title">create an account.</p>            
-            <h2 class="signup--give">Fill out your details</h2>
-         </div>
-         
-         <form (ngSubmit)="onSubmit(signupForm)" #signupForm="ngForm">
-            <div class="signup--form-group-username">
-               <label for="signup--username">Username</label>
-               <input 
-                  type="text" 
-                  name="username" 
-                  id="signup--username" 
-                  placeholder="Username"
-                  minlength="4"
-                  ngModel
-                  required
-                  username
-                  #username="ngModel"
-               />
-               <span id="usernameError" class="signup--error" *ngIf="!username.valid && username.touched">your username must be 4 characters long</span>
-            </div>
-
 */ 
