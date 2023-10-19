@@ -31,24 +31,18 @@ export class SignupComponent implements OnInit {
       if (foundUsername >= 0) {
         this.form.form.controls['username'].setErrors({'incorrect': true});
         this.usernameErrorMessage = `The username "${username}" is not avaliable`;
-      } else if (foundUsername === -1) {
-        this.passwordMatching(password, confrim, username);        
+      } else {
+        this.passwordMatching(username, password, confrim);        
       }
     });
 
   };
   
-  passwordMatching(password: any, confirm: any, username: any) {
-    if (password === confirm) {
-      console.log('match');
+  passwordMatching(username: any, password: any, confirm: any) {
+    if (password !== confirm) {
+      console.log("passwords don't match");
     } else {
-      console.log("password don't match");
+      this.user.postNewUser(username, password).subscribe();
     }
-    // check if the password matches the confirmed password
-
-    // if true then switch username validator to true
   };
 }
-/*
-
-*/ 

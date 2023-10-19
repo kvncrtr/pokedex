@@ -28,7 +28,7 @@ export class UserService {
       return this.http.get<any>(`${this.firebaseUrl}${this.uuid}${this.json}`)
    };
 
-   fetchTeam(id: number) {
+   fetchTeam(id: number): Observable<any> {
       return this.http.get(`${this.firebaseUrl}${this.uuid}${this.json}`).pipe(
          tap((data) => {
             const clone = (Object.entries(data))
@@ -52,7 +52,43 @@ export class UserService {
             return allUsers;
          })
       );
-   }
+   };
    
+   postNewUser(username: string, password: string): Observable<any> {
+      // grab post request and create a header to submit in with the post request
+      const body = {
+         // set a default custom team to then profile
+         customTeams: {
+            "0": {
+               "teamName": "prime",
+               "team": {
+                  "0": "arceus",
+                  "1": "mewtwo",
+                  "2": "giratina",
+                  "3": "dialga",
+                  "4": "palkia",
+                  "5": "rayquaza"
+               }
+            }
+         },
+         email: "",
+         username: username,
+         password: password,
+      };
+      return this.http.post(`${this.firebaseUrl}${this.json}`, body).pipe(
+         // grab the uuid that was populated from firebase and include it in the header
+         tap((data) => {
+            this.postUuidKey(Object.values(data)[0], body)
+         })
+      );
+   };
+   
+   postUuidKey(uuid: string, body: any): Observable<any> {
+      console.log(uuid, body);
+      const bodyOverride = {
+         uuid: uuid
+      }
+      return this.http.patch(`${this.firebaseUrl}${uuid}${this.json}`, bodyOverride);
+   };
    
 }

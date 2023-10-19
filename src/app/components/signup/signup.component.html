@@ -41,7 +41,13 @@
                   username
                   #username="ngModel"
                />
-               <span id="usernameError" class="signup--error" *ngIf="!username.valid && username.touched">{{ usernameErrorMessage }}</span>
+               <span 
+                  id="usernameError" 
+                  class="signup--error" 
+                  *ngIf="!username.valid && username.touched"
+               >
+                  {{ usernameErrorMessage }}
+               </span>
             </div>
                
                <div class="signup--form-group-password">
