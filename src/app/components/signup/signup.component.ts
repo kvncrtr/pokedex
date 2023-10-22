@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
@@ -10,10 +11,11 @@ import { UserService } from 'src/app/shared/services/user.service';
 export class SignupComponent implements OnInit {
   @ViewChild('signupForm') form: any;
   usernameErrorMessage = 'your username must be 4 characters long';
+  passwordErrorMessage = `your password length has to be greater than 6`
 
   constructor(
     private user: UserService,
-    private elementRef: ElementRef
+    private router: Router
   ) {};
 
   ngOnInit(): void {};
@@ -39,16 +41,12 @@ export class SignupComponent implements OnInit {
   };
   
   passwordMatching(password: any, confirm: any, username: any) {
-    if (password === confirm) {
-      console.log('match');
+    if (password !== confirm) {
+      this.form.form.controls['password'].setErrors({'incorrect': true});
+      this.passwordErrorMessage = `the passwords you've entered don't match. please try again`
     } else {
-      console.log("password don't match");
+      this.router.navigate(['login']);
+      this.user.postNewUser(username, password).subscribe();
     }
-    // check if the password matches the confirmed password
-
-    // if true then switch username validator to true
   };
-}
-/*
-
-*/ 
+};

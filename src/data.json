@@ -1,8 +1,8 @@
 {
    "Users": {
-      "N068596859XXHYWZW": {
+      "-N068596859XXHYWZW": {
          "username": "admin",
-         "uuid": "N068596859XXHYWZW",
+         "uuid": "-N068596859XXHYWZW",
          "password": "admin",
          "email": "admin@admin.com",
          "customTeams": {
@@ -49,9 +49,9 @@
             "isDark": "false"
          }
       },
-      "NFEWH4394FXYZ3435": {
+      "-NFEWH4394FXYZ3435": {
          "username": "truetrainer",
-         "uuid": "NFEWH4394FXYZ3435",
+         "uuid": "-NFEWH4394FXYZ3435",
          "password": "train2?",
          "email": "train@poke.com",
          "customTeams": {
@@ -98,9 +98,9 @@
             "isDark": "false"
          }
       },
-      "N32439EUWIHRUEWIXZ": {
+      "-N32439EUWIHRUEWIXZ": {
          "username": "flowerchild",
-         "uuid": "N32439EUWIHRUEWIXZ",
+         "uuid": "-N32439EUWIHRUEWIXZ",
          "password": "rose",
          "email": "rose@poke.com",
          "customTeams": {
@@ -147,6 +147,5 @@
             "isDark": "false"
          }
       } 
-
    }
 }

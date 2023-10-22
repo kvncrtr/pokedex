@@ -8,8 +8,8 @@ import { StorageService } from '../services/storage.service';
     providedIn: 'root'
 })
 export class AuthService {
-    userUrl = 'https://pokedex-9-18-2023-default-rtdb.firebaseio.com/Users'
-    jsonExt = '.json'
+    userUrl = 'https://pokedex-8e1a6-default-rtdb.firebaseio.com/Users/'
+    json = '.json'
     userData: any;
     currentUser = {};
     formElement: any;
@@ -21,12 +21,12 @@ export class AuthService {
     ) { }
     
     reqUser(): Observable<any> {
-        return this.http.get<any>(`${this.userUrl}${this.jsonExt}`)
+        return this.http.get<any>(`${this.userUrl}${this.json}`)
     }
 
     authenticate(user: any) {
         let promise = new Promise((resolve, reject) => {
-            this.http.get(`${this.userUrl}${this.jsonExt}`).subscribe({
+            this.http.get(`${this.userUrl}${this.json}`).subscribe({
                 next: (res: any) => {
                     this.userData = Object.keys(res);
                     this.userData.forEach((key: any) => {

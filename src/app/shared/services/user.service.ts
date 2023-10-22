@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, map, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { UserState } from '../store/reducers/user.reducers';
-// import { fetchUser } from '../store/actions/user.actions';
 
 @Injectable({
    providedIn: 'root'
@@ -52,7 +51,29 @@ export class UserService {
             return allUsers;
          })
       );
+   } 
+   
+   postNewUser(username: any, password: any): Observable<any> {
+      const body = {
+         username: username,
+         password: password,
+         customTeams: {
+            "0": {
+               "teamName": "silver",
+               "team": {
+                  "0": "stonjourner",
+                  "1": "gilmmora",
+                  "2": "volcarona",
+                  "3": "victreebel",
+                  "4": "wormadam",
+                  "5": "iron jugulis"
+               }
+            }
+         },
+         profile: {"settings": "new user"},
+         email: "newuser@gmail.com"
+      }
+
+      return this.http.post(`${this.firebaseUrl}${this.json}`, body);
    }
-   
-   
 }
