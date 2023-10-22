@@ -9,10 +9,6 @@ export class ThemeService {
       private storage: StorageService
    ) {}
 
-   toggleTheme() {
-
-   }
-
    setPreference() {
       return this.storage.getData('mode')
    }

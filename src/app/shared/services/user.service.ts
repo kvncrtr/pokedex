@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, map, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { UserState } from '../store/reducers/user.reducers';
-// import { fetchUser } from '../store/actions/user.actions';
 
 @Injectable({
    providedIn: 'root'
@@ -52,43 +51,29 @@ export class UserService {
             return allUsers;
          })
       );
-   };
+   } 
    
-   postNewUser(username: string, password: string): Observable<any> {
-      // grab post request and create a header to submit in with the post request
+   postNewUser(username: any, password: any): Observable<any> {
       const body = {
-         // set a default custom team to then profile
+         username: username,
+         password: password,
          customTeams: {
             "0": {
-               "teamName": "prime",
+               "teamName": "silver",
                "team": {
-                  "0": "arceus",
-                  "1": "mewtwo",
-                  "2": "giratina",
-                  "3": "dialga",
-                  "4": "palkia",
-                  "5": "rayquaza"
+                  "0": "stonjourner",
+                  "1": "gilmmora",
+                  "2": "volcarona",
+                  "3": "victreebel",
+                  "4": "wormadam",
+                  "5": "iron jugulis"
                }
             }
          },
-         email: "",
-         username: username,
-         password: password,
-      };
-      return this.http.post(`${this.firebaseUrl}${this.json}`, body).pipe(
-         // grab the uuid that was populated from firebase and include it in the header
-         tap((data) => {
-            this.postUuidKey(Object.values(data)[0], body)
-         })
-      );
-   };
-   
-   postUuidKey(uuid: string, body: any): Observable<any> {
-      console.log(uuid, body);
-      const bodyOverride = {
-         uuid: uuid
+         profile: {"settings": "new user"},
+         email: "newuser@gmail.com"
       }
-      return this.http.patch(`${this.firebaseUrl}${uuid}${this.json}`, bodyOverride);
-   };
-   
+
+      return this.http.post(`${this.firebaseUrl}${this.json}`, body);
+   }
 }

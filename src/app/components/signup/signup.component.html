@@ -63,7 +63,7 @@
                   password
                   #password="ngModel"
                />
-               <span class="signup--error" *ngIf="!password.valid && password.touched">your password length has to be greater than 6</span>
+               <span class="signup--error" *ngIf="!password.valid && password.touched">{{ passwordErrorMessage }}</span>
             </div>
 
             <div class="signup--form-group-confirm">
